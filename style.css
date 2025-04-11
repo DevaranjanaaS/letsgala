@@ -1,0 +1,205 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap');
+
+/* Base Styles */
+:root {
+  --primary-color: #f5a637;
+  --secondary-color: #2a2a2a;
+  --text-color: #333;
+  --light-text: #777;
+  --white: #fff;
+  --light-bg: #f9f9f9;
+  --dark-bg: #191919;
+  --border-color: #eee;
+  --transition: all 0.3s ease;
+  --shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  --border-radius: 10px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  color: var(--text-color);
+  line-height: 1.7;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+p {
+  margin-bottom: 15px;
+  color: var(--light-text);
+}
+
+a {
+  text-decoration: none;
+  color: var(--primary-color);
+  transition: var(--transition);
+}
+
+section {
+  padding: 80px 0;
+}
+
+.section-header {
+  margin-bottom: 50px;
+}
+
+.section-header h2 {
+  font-size: 16px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: var(--primary-color);
+  margin-bottom: 10px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.section-header p {
+  font-size: 32px;
+  font-weight: 700;
+  color: var(--text-color);
+  font-family: 'Playfair Display', serif;
+}
+
+/* Header */
+.header {
+  padding: 20px 0;
+  background-color: var(--white);
+  box-shadow: var(--shadow);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar-brand {
+  font-weight: 700;
+  color: var(--secondary-color);
+  font-size: 28px;
+  font-family: 'Playfair Display', serif;
+}
+
+.nav-link {
+  color: var(--text-color);
+  font-weight: 500;
+  margin: 0 10px;
+  transition: var(--transition);
+}
+
+.nav-link:hover, .nav-link.active {
+  color: var(--primary-color);
+}
+
+.profile-link {
+  background-color: var(--primary-color);
+  color: var(--white) !important;
+  padding: 8px 20px;
+  border-radius: 50px;
+}
+
+.profile-link:hover {
+  background-color: var(--secondary-color);
+}
+
+/* Hero Section */
+.hero-section {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://source.unsplash.com/random/1920x1080/?event') no-repeat center center;
+  background-size: cover;
+  padding: 150px 0;
+  text-align: center;
+  color: var(--white);
+}
+
+.hero-section h1 {
+  font-size: 48px;
+  line-height: 1.2;
+  margin-bottom: 20px;
+  color: var(--white);
+}
+
+.hero-section h1 span {
+  color: var(--primary-color);
+}
+
+.hero-section p {
+  font-size: 18px;
+  color: var(--white);
+  margin-bottom: 30px;
+}
+
+.hero-buttons {
+  margin-top: 30px;
+}
+
+.primary-btn {
+  background-color: var(--primary-color);
+  color: var(--white);
+  padding: 12px 30px;
+  border-radius: 50px;
+  font-weight: 500;
+  transition: var(--transition);
+  margin-right: 15px;
+}
+
+.primary-btn:hover {
+  background-color: var(--secondary-color);
+  color: var(--white);
+}
+
+.secondary-btn {
+  background-color: transparent;
+  color: var(--white);
+  padding: 12px 30px;
+  border-radius: 50px;
+  font-weight: 500;
+  transition: var(--transition);
+  border: 1px solid var(--white);
+}
+
+.secondary-btn:hover {
+  background-color: var(--white);
+  color: var(--text-color);
+}
+
+/* Services Section */
+.services-section {
+  background-color: var(--light-bg);
+  padding: 80px 0;
+}
+
+.service-categories {
+  margin-top: 50px;
+}
+
+.service-category {
+  margin-bottom: 30px;
+}
+
+.category-img {
+  width: 150px;
+  height: 150px;
+  margin: 0 auto 20px;
+  border: 5px solid var(--white);
+  border-radius: 50%;
+  overflow: hidden;
+  box-shadow: var(--shadow);
+}
+
+.category-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.service-category h4 {
+  font-size: 18px;
+  margin-top: 15px;
+}
+
